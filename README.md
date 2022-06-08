@@ -7,7 +7,9 @@
 # Authentication vs Authorization
 
 - Authentication: is to verify Who you are.
-- Authorization: 
+    + Method: Login form, HTTP requests to authentication, Custom Authentication
+- Authorization: device if you have permissions to access a resource.
+    + Method: Access Control URLs, Access Control List (ACLs)
 
 
 
