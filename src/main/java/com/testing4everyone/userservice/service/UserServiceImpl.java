@@ -1,9 +1,9 @@
-package io.getarrays.userservice.service;
+package com.testing4everyone.userservice.service;
 
-import io.getarrays.userservice.domain.Role;
-import io.getarrays.userservice.domain.User;
-import io.getarrays.userservice.repo.RoleRepo;
-import io.getarrays.userservice.repo.UserRepo;
+import com.testing4everyone.userservice.repo.RoleRepo;
+import com.testing4everyone.userservice.domain.Role;
+import com.testing4everyone.userservice.domain.User;
+import com.testing4everyone.userservice.repo.UserRepo;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -18,11 +18,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-/**
- * @author Get Arrays (https://www.getarrays.io/)
- * @version 1.0
- * @since 7/10/2021
- */
 @Service @RequiredArgsConstructor @Transactional @Slf4j
 public class UserServiceImpl implements UserService, UserDetailsService {
     private final UserRepo userRepo;

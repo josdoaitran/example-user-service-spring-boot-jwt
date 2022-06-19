@@ -1,8 +1,8 @@
-package io.getarrays.userservice;
+package com.testing4everyone.userservice;
 
-import io.getarrays.userservice.domain.Role;
-import io.getarrays.userservice.domain.User;
-import io.getarrays.userservice.service.UserService;
+import com.testing4everyone.userservice.domain.Role;
+import com.testing4everyone.userservice.domain.User;
+import com.testing4everyone.userservice.service.UserService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package io.getarrays.userservice.domain;
+package com.testing4everyone.userservice.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,11 +10,6 @@ import javax.persistence.Id;
 
 import static javax.persistence.GenerationType.AUTO;
 
-/**
- * @author Get Arrays (https://www.getarrays.io/)
- * @version 1.0
- * @since 7/10/2021
- */
 @Entity
 @Data
 @NoArgsConstructor

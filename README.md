@@ -1,5 +1,5 @@
 # Example_user_service_spring_boot_jwt
-
+This repository is to build a simple JWT Web Service with Java Springboot.
 
 # JWT = Json Web Token
 

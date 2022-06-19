@@ -1,7 +1,7 @@
-package io.getarrays.userservice.security;
+package com.testing4everyone.userservice.security;
 
-import io.getarrays.userservice.filter.CustomAuthenticationFilter;
-import io.getarrays.userservice.filter.CustomAuthorizationFilter;
+import com.testing4everyone.userservice.filter.CustomAuthenticationFilter;
+import com.testing4everyone.userservice.filter.CustomAuthorizationFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,11 +18,6 @@ import static org.springframework.http.HttpMethod.GET;
 import static org.springframework.http.HttpMethod.POST;
 import static org.springframework.security.config.http.SessionCreationPolicy.*;
 
-/**
- * @author Get Arrays (https://www.getarrays.io/)
- * @version 1.0
- * @since 7/10/2021
- */
 @Configuration @EnableWebSecurity @RequiredArgsConstructor
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     private final UserDetailsService userDetailsService;
