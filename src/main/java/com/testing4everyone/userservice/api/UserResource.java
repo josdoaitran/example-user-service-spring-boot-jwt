@@ -10,6 +10,7 @@ import com.testing4everyone.userservice.domain.User;
 import com.testing4everyone.userservice.service.UserService;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.MimeTypeUtils;
@@ -52,7 +53,7 @@ public class UserResource {
     @PutMapping("/role/addtouser")
     public ResponseEntity<?>addRoleToUser(@RequestBody RoleToUserForm form) {
         userService.addRoleToUser(form.getUsername(), form.getRoleName());
-        return ResponseEntity.ok().build();
+        return ResponseEntity.noContent().build();
     }
 
     @GetMapping("/token/refresh")
